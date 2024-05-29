@@ -1,0 +1,138 @@
+
+.navigation .leftbox{
+    display: flex;
+    align-items: center;
+}
+.navigation .leftbox .logo{
+    width: 90px;
+    height: 20px;
+    padding: 18px 14px 18px 16px;
+    cursor: pointer;
+}
+.navigation .leftbox .menu{
+    margin: 0;
+    padding: 8px;
+    height: 24px;
+    cursor: pointer;
+}
+.navigationbar .navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation .center {
+    display: flex;
+    align-items: center;
+    width: 47%;
+}
+.navigation .center .searchbar{
+    width: 74%;
+}
+.navigation .center .searchbar input{
+    border: 1px solid #ccc;
+    border-radius: 40px 0 0 40px;
+    height: 40px;
+    padding-left: 20px;
+    width: 96%;
+    outline: none;
+}
+.navigation .center .searchicon{
+    border-radius: 0 40px 40px 0;
+    cursor: pointer;
+    height: 43px;
+    width: 64px;
+    border: 1px solid #ccc;
+}
+.navigation .rightbox{
+    width: 15%;
+}
+.bottomSection{
+    display: flex;
+}
+.bottomSection .sidebar{
+    width: 14%;
+    padding: 12px;
+}
+.bottomSection .list{
+    width: 80%;
+    padding: 0 24px;
+}
+.bottomSection .sidebar .sidebarMenuItem a{
+    text-decoration: none;
+    color: #0f0f0f;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding: 6px 12px;
+}
+.bottomSection .sidebar .sidebarMenuItem a:hover{
+    background-color: #f2f2f2;
+    border-radius: 8px;
+}
+.bottomSection .sidebar .sidebarMenuItem:last-child{
+    border-bottom: 1px solid #f2f2f2;
+}
+.bottomSection .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+.bottomSection .list .cardbox{
+    width: 32%;
+    margin-top: 20px;
+}
+.bottomSection .list .cardItem .top{
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.bottomSection .list .cardItem .top img{
+    min-height: 224px;
+    background-color: transparent;
+}
+.bottomSection .list .cardItem .bottom{
+    display: flex;
+    column-gap: 10px;
+    min-height: 100px;
+    max-height: 100px;
+    font-size: 15px;
+}
+.bottomSection .list .cardItem .bottom .title{
+    font-weight: bold;
+    cursor: pointer;
+}
+.bottomSection .list .cardItem .bottom .name{
+    cursor: pointer;
+    margin-top: 5px;
+    color: #909090;
+}
+
+@media screen and (max-width: 576px) {
+    .bottomSection .list .cardbox{
+        width: 100%;
+    }
+    .bottomSection .sidebar .sidebarMenuItem a{
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 10px;
+        padding: 0px;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .bottomSection .sidebar .sidebarMenuItem a img{
+        width: 20px;
+    }
+    .bottomSection .sidebar{
+        padding: 10px;
+    }
+    .bottomSection .sidebar .sidebarMenuItem:last-child{
+        padding-bottom: 10px;
+    }
+    .navigation .rightbox {
+        width: 9%;
+        padding-left: 5px;
+    }
+}
